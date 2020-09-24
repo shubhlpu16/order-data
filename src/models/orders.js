@@ -17,6 +17,7 @@ const orderSchema = mongoose.Schema({
   city:{
     type:String,
     required:true,
+    trim:true,
   },
   status:{
     type: String,
