@@ -12,12 +12,8 @@ const port = process.env.PORT;
 
 app.use(cors());
 app.use(express.json());
-app.use('/.netlify/functions/api', orderRouter);
-app.use('/.netlify/functions/api', catalogueRouter);
-
-app.listen(port, () => {
-  console.log(`App listening on port ${port}`);
-});
+app.use('/.netlify/functions/index', orderRouter);
+app.use('/.netlify/functions/index', catalogueRouter);
 
 module.exports = app;
 module.exports.handler = serverless(app);
