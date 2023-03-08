@@ -5,9 +5,9 @@
 
 #### Get 
 
-https://order-data-production.up.railway.app/orders
+https://order-data-api.netlify.app/.netlify/functions/index/orders
 <br>or<br>
-https://order-data-production.up.railway.app/orders?city=rohtak <br>
+https://order-data-api.netlify.app/.netlify/functions/index/orders?city=rohtak <br>
 for get orders according to cities , no query for all cities use first
 
 #### Post
